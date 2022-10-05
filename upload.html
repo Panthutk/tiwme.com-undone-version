@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="upload.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="Finally.mp4" type="video/mp4">
+    </video> 
+
+    <div class="bar">
+        <div class="bar1">   
+            <img src="tiwmee2.png" width="150" height="50">
+            <img id="guest" src="unknown guest.png" width="50" height="50">
+        </div>
+        <div class="bar2">
+            <input type="text" placeholder="ค้นหาชีท" size="40">
+        </div>
+        <div class="bar3">
+            <a href="upload.html"><img src="search_button.png" width="40" height="34"></a>
+        </div>
+        <div class="bar4">
+            <p>Guest</p>
+        </div>
+        <div class="bar5">
+            <a href="home.html"><p>หน้าหลัก</p></a>
+        </div> 
+        <div class="bar6">
+            <p>อัพโหลดชีท</p>
+        </div>
+    </div>
+
+
+    <div class="container-form">
+        <div class="container-topic">
+            <div class="name" id="topic">หัวข้อ : </div>
+            <div class="input-ans1-text" id="input-topic"><input type="input" name="answer" placeholder="ข้อความ"></div>
+        </div>
+
+        <div class="container-grade">
+            <div class="name" id="grade">ปีการศึกษา : </div>
+
+            <div class="input-ans1" id="select-grade1">
+                <select>
+                    <option value="0">โปรดเลือก</option>
+                    <option value="1" id="g4">มัธยมปลายปีที่ 4</option>
+                    <option value="2" id="g5">มัธยมปลายปีที่ 5</option>
+                    <option value="3" id="g6">มัธยมปลายปีที่ 6</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container-subject">
+            <div class="name" id="subject">วิชา : </div>
+
+            <div class="input-ans1" id="select-subject">
+                <form>
+                    <input type="checkbox" id="select1" name="answer" >
+                    <label for="select1">คณิตเพิ่มเติม</label><br>
+                    <input type="checkbox" id="select2" name="answer" >
+                    <label for="select2">ฟิสิกเพิ่มเติม</label>
+                </form>
+            </div>
+        </div>
+
+        <div class="container-choose">
+            <div class="name" id="choose">บท : </div>
+
+            <div class="input-ans2" id="container-select">
+                <select>
+                    <option value="0">โปรดเลือก</option>
+                    <option value="1" id="s1">ลำดับและอนุกรม</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="container-file">
+            <input type="file" id="image_input" accept="image/png, image/jpg">
+        </div>
+
+        <div class="b">
+            <input class="btn" type="submit" value="ส่ง">
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="app3.js"></script>
+</body>
+</html>

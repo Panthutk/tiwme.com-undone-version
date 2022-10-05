@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Sidebar.css">
+
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="Finally.mp4" type="video/mp4">
+      </video>  
+    <div class="bar">
+        <div class="bar1">   
+            <img src="tiwmee2.png" width="150" height="50">
+            <img id="guest" src="unknown guest.png" width="50" height="50">
+        </div>
+        <div class="bar2">
+            <input type="text" placeholder="ค้นหาชีท" size="40">
+        </div>
+        <div class="bar3">
+            <a href="subject.html"><img src="search_button.png" width="40" height="34"></a>
+        </div>
+        <div class="bar4">
+            <p>Guest</p>
+        </div>
+        <div class="bar5">
+            <a href="home.html"><p>หน้าหลัก</p></a>
+        </div> 
+        <div class="bar6">
+            <a href="upload.html"><p>อัพโหลดชีท</p></a>
+        </div>
+        
+    </div>
+
+    <div>
+        <button class="box" id="buttombox" onclick="openSB()">หมวดหมู่</button>
+    </div>
+
+    <div class="sidebar" id="SB">
+        <br><h1>เลือกหมวดหมู่</h1>
+        <div class="select">
+            <p>ปีการศึกษา : 
+            <select>
+                <option value="0">โปรดเลือก</option>
+                <option value="1">ปีการศึกษาปีที่ 4</option>
+                <option value="2">ปีการศึกษาปีที่ 5</option>
+                <option value="3">ปีการศึกษาปีที่ 6</option>
+            </select>
+            </p>
+        </div>
+
+        <div class="select">
+            <p>วิชา : 
+            <select>
+                <option value="0">โปรดเลือก</option>
+                <option value="1">คณิตพื้นฐาน</option>
+                <option value="2">คณิตเพิ่มเติม</option>
+                <option value="3">ฟิสิกเพิ่มเติม</option>
+                <option value="4">เคมีเพิ่มเติม</option>
+                <option value="5">ชีวะวิทยา</option>
+                <option value="6">สังคมศึกษา</option>
+                <option value="7">ภาษาไทย</option>
+                <option value="8">ภาษาอังกฤษ</option>
+            </select>
+            </p>
+        </div>
+    <button class="search_category"><a href="subject.html">ค้นหา</a></button>
+    </div>
+
+    <div class="choose">
+        <div class="head">
+            <img src="head.png" style="width:20%;height: 20%;">
+            <div class="centered">Centered</div>
+        </div>
+        <div class="topic">
+            <a href="showsubject.html" class="pic1"><img src="head.png" ></a>
+            <a href="showsubject.html" class="pic1"><img src="head.png" ></a>
+            <a href="showsubject.html" class="pic1"><img src="head.png" ></a>       
+        </div>
+        <div class="Subjectname">
+            <p class="Subject1">Test1</p>
+            <p class="Subject2">Test2</p>
+            <p class="Subject3">Test3</p>
+        </div>
+    </div>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="Sidebar.js"></script>
+</body>
+</html>

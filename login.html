@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="Finally.mp4" type="video/mp4">
+      </video>  
+    <div class="bar">
+        <div class="bar1">   
+            <img src="tiwmee2.png" width="150" height="50">
+            <img id="guest" src="unknown guest.png" width="50" height="50">
+        </div>
+        <div class="bar2">
+            <input type="text" placeholder="ค้นหาชีท" size="40">
+        </div>
+        <div class="bar3">
+            <a href="subject.html"><img src="search_button.png" width="40" height="34"></a>
+        </div>
+        <div class="bar4">
+            <p>Guest</p>
+        </div>
+        <div class="bar5">
+            <a href="home.html"><p>หน้าหลัก</p></a>
+        </div> 
+        <div class="bar6">
+            <a href="upload.html"><p>อัพโหลดชีท</p></a>
+        </div>
+    </div>
+
+    <form action="/action_page.php" method="post">
+        <div class="container-all">
+            <div class="imgcontainer">
+                <img src="unknown guest.png" alt="Guest" class="guest">
+            </div>
+            
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                <button type="submit">Login</button>
+                <input type="checkbox" checked="checked" name="remember">
+                <p> Remember me </p>
+            </div>
+            
+            <div class="container">
+                <a href="home.html"><button type="button" class="cancelbtn">Cancel</button></a>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </div>
+    </form>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
